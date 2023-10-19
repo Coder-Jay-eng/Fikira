@@ -25,13 +25,20 @@ head, body {
     margin: 0% 30%;
 }
 
-.add-note {
+.add-note ::before {
     color: rgb(190, 167, 73);
     font-size: larger;
     font-weight: 800;
     margin: 0% 40%;
 }
 
-.add-link :hover {
+.add-note :hover {
     color: rgb(182, 123, 100);
+}
+
+.add-button {
+    background-color: rgb(134, 18, 47);
+    border-radius: 10%;
+    padding: 0% 5% 0% 5%;
+    margin-left: 40%;
 }
