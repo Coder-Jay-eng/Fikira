@@ -1,0 +1,37 @@
+head, body {
+    background-color: rgb(128, 95, 160);
+    margin: auto;
+}
+
+.container {
+    font: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    padding: auto;
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+
+.header {
+    color: rgb(218, 185, 144);
+    font-size: x-large;
+    margin: 0% 35%;
+}
+
+.homepage {
+    color: rgb(40, 177, 177);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant-caps: all-petite-caps;
+    margin: 0% 30%;
+}
+
+.add-note {
+    color: rgb(190, 167, 73);
+    font-size: larger;
+    font-weight: 800;
+    margin: 0% 40%;
+}
+
+.add-link :hover {
+    color: rgb(182, 123, 100);
+}
