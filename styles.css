@@ -43,3 +43,46 @@ head, body {
     margin-left: 40%;
 }
 
+
+#addNoteButton {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: auto; 
+    display: block;
+}
+
+
+#addNoteButton:hover {
+    background-color: #0056b3;
+}
+
+
+#noteDisplay {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.note {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.note p {
+    color: #666;
+    font-size: 16px;
+}
