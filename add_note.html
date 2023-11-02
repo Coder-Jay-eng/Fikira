@@ -3,41 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Note</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Add Thoughts</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Add a New Note</h1>
-    
-    <!-- Display the added note dynamically using JavaScript -->
-    <div id="noteDisplay"></div>
-
-    <script src="add_note.js"></script>
-    <script>
-        // Function to retrieve URL parameters by name
-        function getParameterByName(name, url) {
-            if (!url) url = window.location.href;
-            name = name.replace(/[\[\]]/g, "\\$&");
-            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-                results = regex.exec(url);
-            if (!results) return null;
-            if (!results[2]) return '';
-            return decodeURIComponent(results[2].replace(/\+/g, " "));
-        }
-
-        // Get the parameters from the URL
-        const noteTitle = getParameterByName("title");
-        const noteContent = getParameterByName("content");
-
-        // Display the added note on the "Add Note" page
-        const noteDisplay = document.getElementById("noteDisplay");
-        if (noteTitle && noteContent) {
-            const noteElement = document.createElement("div");
-            noteElement.innerHTML = `<h2>${noteTitle}</h2><p>${noteContent}</p>`;
-            noteDisplay.appendChild(noteElement);
-        }
-    </script>
+    <div>
+        <div>
+            <h2 class="thoughtArena">Thought Arena</h2>
+        </div>
+        <div class="formContainer">
+            <form>
+                <label for="title">Main Thought: </label>
+                <input type="text" id="title"><br>
+                 <label for="content">What's up?: </label>
+                <input type="text" id="content"><br>
+                 <label for="date">Brilliance on: </label>
+                <input type="date" id="date">
+            </form>
+            <button type="button" class="Add Note">Add New Note</button>
+        </div>
+    </div>
 </body>
 </html>
-
-
