@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Note</title>
+    <title>Add Thoughts</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Add a New Note</h1>
-
-    <!-- Plus button to reveal note container -->
-    <button id="showNoteButton">+</button>
-
-    <!-- Container for adding notes (initially hidden) -->
-    <div id="noteContainer">
-        <form id="noteForm">
-            <label for="noteTitle">Note Title:</label>
-            <input type="text" id="noteTitle" name="noteTitle" required><br>
-
-            <label for="noteContent">Note Content:</label>
-            <textarea id="noteContent" name="noteContent" rows="4" cols="50" required></textarea><br>
-
-            <button type="submit">Add Note</button>
-        </form>
+    <div>
+        <div>
+            <h2 class="thoughtArena">Thought Arena</h2>
+        </div>
+        <div class="formContainer">
+            <form>
+                <label for="title">Main Thought: </label>
+                <input type="text" id="title"><br>
+                 <label for="content">What's up?: </label>
+                <input type="text" id="content"><br>
+                 <label for="date">Brilliance on: </label>
+                <input type="date" id="date">
+            </form>
+            <button type="button" class="Add Note">Add New Note</button>
+        </div>
     </div>
-
-    <div id="noteDisplay"></div>
-
-    <script src="app.js"></script>
 </body>
 </html>
